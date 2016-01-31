@@ -26,7 +26,8 @@ class Carrier extends CoreShopCarrier
      * @param Zone $zone
      * @return float|bool
      */
-    public function getMaxDeliveryPrice(Zone $zone = null) {
+    public function getMaxDeliveryPrice(Zone $zone = null)
+    {
         return 1000;
     }
 
@@ -37,7 +38,8 @@ class Carrier extends CoreShopCarrier
      * @param Cart $cart
      * @return bool|float
      */
-    public function getDeliveryPrice(Cart $cart, Zone $zone = null) {
+    public function getDeliveryPrice(Cart $cart, Zone $zone = null)
+    {
         return 100;
     }
 
@@ -49,9 +51,8 @@ class Carrier extends CoreShopCarrier
      * @return bool
      * @throws \CoreShop\Exception\UnsupportedException
      */
-    public function checkCarrierForCart(Cart $cart = null, Zone $zone = null) {
+    public function checkCarrierForCart(Cart $cart = null, Zone $zone = null)
+    {
         return true;
     }
 }
-
-

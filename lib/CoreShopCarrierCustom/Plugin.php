@@ -44,7 +44,6 @@ class Plugin extends AbstractPlugin implements PluginInterface
      */
     public static function install()
     {
-
     }
 
     /**
@@ -52,8 +51,5 @@ class Plugin extends AbstractPlugin implements PluginInterface
      */
     public static function uninstall()
     {
-
     }
 }
-
-
