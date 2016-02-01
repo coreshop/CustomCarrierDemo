@@ -1,6 +1,6 @@
 <?php
 /**
- * CoreShopCarrierCustom
+ * CustomCarrierDemo
  *
  * LICENSE
  *
@@ -12,7 +12,7 @@
  * @license    http://www.coreshop.org/license     GNU General Public License version 3 (GPLv3)
  */
 
-namespace CoreShopCarrierCustom;
+namespace CustomCarrierDemo;
 
 use Pimcore\API\Plugin\AbstractPlugin;
 use Pimcore\API\Plugin\PluginInterface;
