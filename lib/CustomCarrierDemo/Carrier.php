@@ -16,6 +16,7 @@ namespace CustomCarrierDemo;
 
 use CoreShop\Model\Carrier as CoreShopCarrier;
 use CoreShop\Model\Cart;
+use CoreShop\Model\User\Address;
 use CoreShop\Model\Zone;
 
 /**
@@ -27,10 +28,10 @@ class Carrier extends CoreShopCarrier
     /**
      * Get max possible delivery price for this carrier
      *
-     * @param Zone $zone
+     * @param Address $address
      * @return float|bool
      */
-    public function getMaxDeliveryPrice(Zone $zone = null)
+    public function getMaxDeliveryPrice(Address $address = null)
     {
         return 1000;
     }
@@ -38,11 +39,11 @@ class Carrier extends CoreShopCarrier
     /**
      * Get delivery Price for cart
      *
-     * @param Zone $zone
      * @param Cart $cart
+     * @param Address $address
      * @return bool|float
      */
-    public function getDeliveryPrice(Cart $cart, Zone $zone = null)
+    public function getDeliveryPrice(Cart $cart, Address $address = null)
     {
         return 100;
     }
@@ -51,11 +52,11 @@ class Carrier extends CoreShopCarrier
      * Check if carrier is allowed for cart and zone
      *
      * @param Cart|null $cart
-     * @param Zone|null $zone
+     * @param Address|null $address
      * @return bool
      * @throws \CoreShop\Exception\UnsupportedException
      */
-    public function checkCarrierForCart(Cart $cart = null, Zone $zone = null)
+    public function checkCarrierForCart(Cart $cart = null, Address $address = null)
     {
         return true;
     }
